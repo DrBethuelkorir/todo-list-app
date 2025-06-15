@@ -1,0 +1,80 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(11, 7, 7);
+    background-image: url(./images/bg-desktop-dark.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 50vh;
+    background-position: top;
+    min-height: 100vh;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.todo-mode{
+    display: flex;
+    gap: 10rem;
+    margin-top: 2rem;
+}
+.todo p{
+    color: white;
+    word-spacing: 2rem;
+}
+.form input{
+    display: flex;
+    flex-direction: column;
+}
+.radio-box{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    /* background-color: black; */
+    color: white;
+    padding: 3px;
+}
+.form-create{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    background-color: rgb(36, 34, 34);
+    padding: 1rem;
+    border-radius: 5px;
+    color: white;
+}
+.form-others{
+    background-color: rgb(36, 34, 34);
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+.check{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    margin-top: 10px;
+    font-size: xx-small;
+    gap: 7px;
+}
+.all-acitive-completed{
+    display: flex;
+    gap: 3px;
+}
+.clear-completed{
+     display: flex;
+    gap: 3px;
+}
+.drag{
+    display: flex;
+    justify-content: center;
+    font-size: xx-small;
+    margin-top: 5px;
+    color: grey;
+}
+hr{
+    border: 1px solid whitesmoke;
+}

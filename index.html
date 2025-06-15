@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To do list</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="todo-mode">
+      <div class="todo">
+        <p>TODO</p>
+      </div>
+      <div class="mode">
+        <img src="./images/icon-sun.svg" alt="light mode" />
+      </div>
+    </div>
+    <div class="form">
+      <div class="form-create">
+        <input type="radio" id="create-today" name="todo" />
+        <label for="create-today">Create a new to Today...</label>
+      </div>
+      <div class="form-others">
+        <div class="radio-box">
+          <input type="radio" id="todo1" name="todo" />
+          <label for="todo1">Complete online java course</label>
+        </div>
+        <div class="radio-box">
+          <input type="radio" id="todo2" name="todo" />
+          <label for="todo2">Jog around the park 3x...</label>
+        </div>
+        <div class="radio-box">
+          <input type="radio" id="todo3" name="todo" />
+          <label for="todo3">10 minutes meditation...</label>
+        </div>
+        <div class="radio-box">
+          <input type="radio" id="todo4" name="todo" />
+          <label for="todo4">Read for 1 hour...</label>
+        </div>
+        <div class="radio-box">
+          <input type="radio" id="todo5" name="todo" />
+          <label for="todo5">Pick up groceries...</label>
+        </div>
+        <div class="radio-box">
+          <input type="radio" id="todo6" name="todo" />
+          <label for="todo6">Complete to do app on frontend mentor...</label>
+        </div>
+      </div>
+      <div class="check">
+        <div class="items-left">
+          <p>5 items left</p>
+        </div>
+        <div class="all-acitive-completed">
+          <div>All</div>
+          <div>Active</div>
+          <div>completed</div>
+        </div>
+        <div class="clear-completed">
+          <div>clear</div>
+          <div>Completed</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <div class="drag">
+    <p>drag and drop to reorder list</p>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
