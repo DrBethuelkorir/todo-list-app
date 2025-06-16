@@ -10,7 +10,7 @@ icon.addEventListener("click", () => {
     icon.alt="switch to dark mode"
    }else{
     icon.src="images/icon-sun.svg"
-    icon.src="switch to light mode"
+    icon.alt="switch to light mode"
    }
 
 });

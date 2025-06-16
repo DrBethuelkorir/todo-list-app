@@ -10,6 +10,9 @@ body{
     background-position: top;
     min-height: 100vh;
 }
+body.mode-light{
+    background-color: white;
+}
 .wrapper{
     display: flex;
     flex-direction: column;
