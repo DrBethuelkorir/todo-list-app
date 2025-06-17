@@ -36,6 +36,15 @@ function addTodo(taskText) {
   `;
 
   taskList.appendChild(newTask);
+  const newCheckbox = newTask.querySelector("input[type='checkbox']");
+  newCheckbox.addEventListener("change", () => {
+    if (newCheckbox.checked) {
+      newCheckbox.parentElement.classList.add("strikethrouh");
+    } else {
+      newCheckbox.parentElement.classList.remove("strikethrouh");
+    }
+    update(); // update counts
+  });
 }
 const checkboxes = document.querySelectorAll('input[type="checkbox"]');
 
@@ -47,5 +56,18 @@ checkboxes.forEach((checkbox) =>{
     else{
       checkbox.parentElement.classList.remove("strikethrouh")
     }
+    update();
   })
 })
+function update() {
+  const total = document.querySelectorAll('input[type="checkbox"]').length;
+  const span = document.getElementById("all");
+  span.textContent = total;
+  const checkedboxes = document.querySelectorAll('input[type="checkbox"]:checked').length;
+  const completed = document.getElementById("completed");
+  completed.textContent=checkedboxes;
+  const unchecked = document.querySelectorAll('input[type="checkbox"]:not(:checked)').length;
+  const active = document.getElementById("left");
+ active.textContent = unchecked;
+}
+update();

@@ -66,11 +66,21 @@ body.mode-light{
 .all-active-completed{
     display: flex;
     gap: 3px;
+    font-size: xx-small;
 }
 .clear-completed{
      display: flex;
-    gap: 3px;
+     justify-content: center;
+     align-items: center;
+    gap: 2px;
+    background-color: rgb(189, 94, 94);
+    padding: 2px;
+    border-radius: 5px;
 }
+ .clear-completed:hover{
+    background-color: red;
+    width: 20%;
+ }
 .drag{
     display: flex;
     justify-content: center;
