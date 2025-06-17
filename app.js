@@ -71,3 +71,12 @@ function update() {
  active.textContent = unchecked;
 }
 update();
+const removecheck = document.getElementById("clear-completed");
+removecheck.addEventListener("click",()=>{
+   const checkedboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+   checkedboxes.forEach((checkbox)=>{
+    const pardiv = checkbox.parentElement;
+    pardiv.remove();
+   })
+   update();
+})

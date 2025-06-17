@@ -80,6 +80,7 @@ body.mode-light{
  .clear-completed:hover{
     background-color: red;
     width: 20%;
+    cursor: pointer;
  }
 .drag{
     display: flex;
