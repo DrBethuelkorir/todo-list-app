@@ -2,37 +2,32 @@ const body = document.body;
 const icon = document.querySelector(".mode img");
 
 icon.addEventListener("click", () => {
-    body.classList.toggle("mode-light");
+  body.classList.toggle("mode-light");
 
-    // Swap icon image and alt text
-   if(body.classList.contains("mode-light")){
-    icon.src="images/icon-moon.svg"
-    icon.alt="switch to dark mode"
-   }else{
-    icon.src="images/icon-sun.svg"
-    icon.alt="switch to light mode"
-   }
-
+  if (body.classList.contains("mode-light")) {
+    icon.src = "images/icon-moon.svg";
+    icon.alt = "night mode";
+  } else {
+    icon.src = "images/icon-sun.svg";
+    icon.alt = "light mode";
+  }
 });
 
 const input = document.getElementById("create-today");
 const taskList = document.querySelector(".form-others");
 
-// Listen for Enter key
-input.addEventListener("keypress", function (e) {
+input.addEventListener("keypress", (e) => {
   if (e.key === "Enter") {
-    addTodo(input.value.trim());
-    input.value = ""; // Clear input after adding
+    addTodo(input.value.trim()); 
+    input.value = ""; 
   }
 });
 
-function addTodo(taskText) {
+function addTodo(taskText) { 
   if (taskText === "") return;
 
-  // Create unique ID
-  const taskId = "todo" + (document.querySelectorAll(".radio-box").length + 1);
+  const taskId = "todo" + (document.querySelectorAll(".radio-box").length + 1); 
 
-  // Create new radio-box
   const newTask = document.createElement("div");
   newTask.className = "radio-box";
   newTask.innerHTML = `
@@ -42,3 +37,15 @@ function addTodo(taskText) {
 
   taskList.appendChild(newTask);
 }
+const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+checkboxes.forEach((checkbox) =>{
+  checkbox.addEventListener("change",()=>{
+    if(checkbox.checked){
+      checkbox.parentElement.classList.add("strikethrouh")
+    }
+    else{
+      checkbox.parentElement.classList.remove("strikethrouh")
+    }
+  })
+})

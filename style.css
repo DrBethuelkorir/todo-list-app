@@ -11,7 +11,7 @@ body{
     min-height: 100vh;
 }
 body.mode-light{
-    background-color: white;
+    background-color: rgb(228, 217, 217);
 }
 .wrapper{
     display: flex;
@@ -58,7 +58,7 @@ body.mode-light{
 .check{
     display: flex;
     justify-content: space-evenly;
-    color: white;
+    color: rgb(151, 137, 102);
     margin-top: 10px;
     font-size: xx-small;
     gap: 7px;
@@ -74,10 +74,13 @@ body.mode-light{
 .drag{
     display: flex;
     justify-content: center;
-    font-size: xx-small;
+    font-size: xx-small; 
     margin-top: 5px;
     color: grey;
 }
 hr{
     border: 1px solid whitesmoke;
+}
+.strikethrouh{
+    text-decoration: line-through;
 }
