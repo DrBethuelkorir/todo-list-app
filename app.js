@@ -31,7 +31,7 @@ function addTodo(taskText) {
   const newTask = document.createElement("div");
   newTask.className = "radio-box";
   newTask.innerHTML = `
-    <input type="radio" id="${taskId}" name="todo" />
+    <input type="checkbox" id="${taskId}" name="todo" />
     <label for="${taskId}">${taskText}</label>
   `;
 
